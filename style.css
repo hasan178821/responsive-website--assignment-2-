@@ -1,82 +1,96 @@
-h1 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 1em;
-}
-h2,h3,p,span,small{
-    font-family: 'Roboto', sans-serif;
-}
-.color-highlight{
-    color: #fa804c;
-}
-.header-section{
-    background-color: #fffbf0;
-}
-.silder-section{
-    background-color: #fffbf0;
-}
-.penguin-button{
-    background-color: #76c27e;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 10px;
-}
-.penguin-button:hover{
-    color: white;
-}
-.penguin-card {
-    background-color: #f1f1f1;
-    border-radius: 15px;
-    padding: 15px;
-    height: 100%;
-}
-.penguin-card img {
-    width: 300px;
-    height: 300px;
-    padding: 25px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 10px;
-}
-.man-jacket-section{
-    padding-top: 8%;
-}
-.service-section {
-    padding: 12% 0;
-}
-footer a{
-    text-decoration: none;
-    color: #fb5710;
-}
-footer a:hover{
-    color: #802903;
-}
-.off-section{
-    background-color: #f1f1f1;
-    background-image: url(images/happy-baby.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-.offer-card {
-    height: 285px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    transition: .2s;
-}
-.offer-card img {
-    padding: 10%;
-    background-color: #f1f1f1;
-}
-.offer-card:hover{
-    transform:scale(1.1);
-    box-shadow: 10px 10px 40px rgba(222, 222, 222, .7);
-    background-color: #fb5710;
-    cursor: pointer;
-    border: none;
-}
+/* Main CSS Style Start */
 
+    h1 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 1em;
+    }
+    h2,h3,p,span,small{
+        font-family: 'Roboto', sans-serif;
+    }
+    .color-highlight{
+        color: #fa804c;
+    }
+    
+
+    .header-section{
+        background-color: #fffbf0;
+        z-index: 5;
+        width: 100%;
+    }
+    .silder-section{
+        background-color: #fffbf0;
+    }
+    .penguin-button{
+        background-color: #76c27e;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 10px;
+    }
+    .penguin-button:hover{
+        color: white;
+    }
+    .penguin-card {
+        background-color: #f1f1f1;
+        border-radius: 15px;
+        padding: 15px;
+        height: 100%;
+    }
+    .penguin-card img {
+        width: 300px;
+        height: 300px;
+        padding: 25px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .man-jacket-section{
+        padding-top: 8%;
+    }
+    .service-section {
+        padding: 12% 0;
+    }
+    footer small {
+        font-size: 16px;
+    }
+    footer a{
+        text-decoration: none;
+        color: #fb5710;
+    }
+    footer a:hover{
+        color: #802903;
+    }
+
+    .offer-card {
+        height: 285px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        transition: .2s;
+        border: none;
+    }
+    .offers-title {
+        font-size: 48px;
+    }
+    .green-highlight{
+        color: #76c27e;
+    }
+    .offer-card img {
+        padding: 10%;
+        background-color: #f1f1f1;
+        border-radius: 15px;
+        width: 192px;
+        height: 200px;
+    }
+    .offer-card:hover{
+        transform:scale(1.1);
+        box-shadow: 10px 10px 40px rgba(222, 222, 222, .7);
+        background-color: #76c27e;
+        cursor: pointer;
+        border: none;
+    }
+
+/* Main CSS Style End */
 
 
 /* Responsive Part Start */
@@ -87,6 +101,7 @@ footer a:hover{
             padding: 15px;
         }
     }
+
 
     @media (max-width: 992px) {
         header{
@@ -135,7 +150,11 @@ footer a:hover{
             width: 30%;
             margin-right: 2%;
         }
+        .offers-title {
+            font-size: 43px;
+        }
     }
+
 
     @media (max-width: 768px) {
         .header-logo{
@@ -148,8 +167,9 @@ footer a:hover{
             font-size: 15px;
         }
         .penguin-button {
-            font-size: 13px;
-            padding: 8px 15px;
+            font-size: 10px;
+            padding: 8px 12px;
+            border-radius: 6px;
         }
         .slider-items{
             flex-wrap: wrap-reverse;
@@ -157,6 +177,83 @@ footer a:hover{
         .slider-right{
             padding-bottom: 30px;
         }
+        .penguin-card img {
+            width: 200px;
+            height: 200px;
+        }
+        .penguin-card-bottom h2 {
+            font-size: 21px;
+            margin-bottom: 0;
+        }
+        .penguin-card h5 {
+            font-size: 16px;
+        }
+        .penguin-card p {
+            font-size: 11px;
+            text-align: justify;
+            margin-bottom: 5px;
+        }
+        .penguin-card{
+            padding-bottom: 0;
+        }
+        .single-card{
+            margin-bottom: 0;
+        }
+        .service-item-left{
+            width: 35%;
+        }
+        .service-item{
+
+        }
+        .service-right {
+            width: 95%;
+        }
+        .offer-item{
+            width: 45%;
+            margin-right: 2%;
+        }
+        .offer-card-bottom p{
+            text-decoration: line-through;
+        }
+        .offers-title {
+            font-size: 36px;
+        }
     }
-   /*  start jacket section */
+
+
+    @media (max-width: 576px) {
+        .single-card{
+            width: 100%;
+        }
+        .penguin-card {
+            width: 65%;
+        }
+        .slider-left p {
+            margin-bottom: 0;
+        }
+        .offer-item {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .offer-card-bottom p{
+            text-decoration: line-through;
+        }
+        .offer-card {
+            height: 340px;
+            width: 240px !important;
+        }
+        .offer-card img {
+            padding: 10%;
+            background-color: #f1f1f1;
+            border-radius: 15px;
+            width: 240px;
+            height: 200px;
+        }
+        .offers-title {
+            font-size: 25px;
+        }
+        footer small {
+            font-size: 16px;
+        }
+    }
 /* Responsive Part ENd */
