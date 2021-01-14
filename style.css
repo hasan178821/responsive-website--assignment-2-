@@ -49,10 +49,11 @@
         padding-top: 8%;
     }
     .service-section {
-        padding: 12% 0;
+        padding: 6% 0;
+        background-color: #fffbf0;
     }
     footer small {
-        font-size: 16px;
+        font-size: 15px;
     }
     footer a{
         text-decoration: none;
